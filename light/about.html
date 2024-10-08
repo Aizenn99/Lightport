@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-transparent my-4">
+            <div class="container">
+                <a class="navbar-brand font-monospace" href="#">Portfolio</a>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav" style="margin-left: 35px;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-black font-monospace" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black font-monospace" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black font-monospace" href="#" id="getresume">RESUME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black font-monospace"
+                                href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNsvKZLWhljtwwZBVnbVxZDtrCTfTCsGvkrKKNTzqTZQCFGGdWHFTJbdhFDCtHXTXsjlBq">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="endnav d-flex">
+                    <a class="nav-link text-black font-monospace" href="https://www.instagram.com/af_.hxt/"
+                        target="_blank">
+                        INSTAGRAM
+                    </a>
+                    <a class="nav-link text-black font-monospace  ms-4" href="https://www.linkedin.com/in/het-kalriya-10297b284/"
+                        target="_blank">
+                        LINKEDIN
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <script>
+        document.getElementById('getresume').addEventListener('click', function() {
+          // Assuming your resume file is stored in your project's root folder
+          const link = document.createElement('a');
+          link.href = 'resume.pdf';  // Example: 'resume.pdf'
+          link.download = 'Het_Kalriya_Resume.pdf';  // Set your desired file name
+          link.click();  // Programmatically click the anchor tag to start download
+        });
+      </script>
+    
+
+
+
+</body>
+
+</html>
